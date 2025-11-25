@@ -31,7 +31,7 @@ export default function GoToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 p-2.5 sm:p-3 bg-gradient-to-r from-primary/30 via-primary/40 to-primary/30 backdrop-blur-xl border border-primary/60 rounded-full shadow-[0_8px_32px_0_rgba(255,0,127,0.37)] hover:shadow-[0_8px_32px_0_rgba(255,0,127,0.5)] transition-all duration-300 ${
+      className={`fixed bottom-24 right-4 sm:right-8 z-40 p-2.5 sm:p-3 bg-gradient-to-r from-primary/30 via-primary/40 to-primary/30 backdrop-blur-xl border border-primary/60 rounded-full shadow-[0_8px_32px_0_rgba(255,0,127,0.37)] hover:shadow-[0_8px_32px_0_rgba(255,0,127,0.5)] transition-all duration-300 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
       }`}
       aria-label="Go to top"

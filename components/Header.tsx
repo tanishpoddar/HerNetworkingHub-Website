@@ -4,12 +4,19 @@ export default function Header() {
   const scrollToForm = () => {
     const formSection = document.getElementById('waitlist-form');
     if (formSection) {
-      formSection.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 80; // Approximate header height
+      const elementPosition = formSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <header className="w-full px-3 sm:px-6 lg:px-8 py-3 sm:py-4 md:py-5 sticky top-0 z-50 bg-background-dark/95 backdrop-blur-lg border-b border-border-dark/50 animate-slide-down shadow-lg shadow-black/10">
+    <header className="w-full px-3 sm:px-6 lg:px-8 py-3 sm:py-4 md:py-5 fixed top-0 left-0 right-0 z-50 bg-background-dark/95 backdrop-blur-lg border-b border-border-dark/50 animate-slide-down shadow-lg shadow-black/10">
       <div className="flex items-center justify-center overflow-hidden max-w-7xl mx-auto">
         <button
           onClick={scrollToForm}
