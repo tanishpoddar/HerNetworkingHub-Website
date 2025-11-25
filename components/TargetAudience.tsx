@@ -10,7 +10,7 @@ export default function TargetAudience() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
       <div className="flex flex-col gap-4 sm:gap-6 animate-fade-in-left px-4 sm:px-0">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight">This Community is for You if You're:</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-yellow-500">This Community is for You if You're:</h2>
         <div className="flex flex-col gap-3 sm:gap-4">
           {criteria.map((criterion, index) => (
             <div 

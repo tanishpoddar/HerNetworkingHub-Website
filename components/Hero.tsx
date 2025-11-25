@@ -1,14 +1,17 @@
 export default function Hero() {
   return (
-    <section className="grid grid-cols-1 gap-8 items-center py-8">
-      <div className="flex flex-col gap-6 text-center items-center">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight animate-fade-in-up px-4">
-          Ambitious Women<br />
-          Deserve <span className="text-primary">Powerful Networks</span>
+    <section className="grid grid-cols-1 gap-8 items-center py-8 w-full overflow-hidden">
+      <div className="flex flex-col gap-6 text-center items-center w-full">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight animate-fade-in-up px-4 text-primary">
+          HerNetworkingHub
         </h1>
         
+        <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
+          Network • Grow • Succeed
+        </p>
+        
         {/* Decorative fading line after heading */}
-        <div className="w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}></div>
+        <div className="w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}></div>
         
         <div className="relative max-w-4xl w-full px-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           {/* Decorative quote marks - overlapping the box */}
@@ -23,15 +26,11 @@ export default function Hero() {
             <p className="text-base md:text-lg text-white/90 leading-relaxed">
               We believe in <span className="text-primary font-semibold">Collaboration over Competition</span>, in lifting each other up & creating a network where <span className="text-primary font-semibold">Every Woman Feels Seen, Heard & Empowered</span>.
             </p>
-            
-            <p className="text-base md:text-lg text-white/90 leading-relaxed">
-              If You're Ready to Network With Purpose, Elevate Your Business & Grow With a Community Of <span className="text-primary font-semibold">Powerhouse Women</span>, This Is Your Sign To Join Us!
-            </p>
           </div>
         </div>
         
-        <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mt-2 animate-fade-in-up px-4" style={{ animationDelay: '0.6s' }}>
-          Let's Rise Together.
+        <p className="text-lg sm:text-xl md:text-2xl font-bold text-white mt-2 animate-fade-in-up px-4" style={{ animationDelay: '0.6s' }}>
+          Ambitious Women Deserve Powerful Networks!
         </p>
       </div>
     </section>

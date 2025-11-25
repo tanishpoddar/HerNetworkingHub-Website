@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="relative w-full flex flex-col items-center">
-        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 flex flex-col gap-12 sm:gap-20 md:gap-24 lg:gap-32">
+      <main className="relative w-full flex flex-col items-center overflow-hidden">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 flex flex-col gap-12 sm:gap-20 md:gap-24 lg:gap-32 overflow-hidden">
           <Hero />
           <Features />
           <TargetAudience />

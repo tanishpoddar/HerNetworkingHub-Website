@@ -66,7 +66,7 @@ export default function WaitlistForm() {
   };
 
   return (
-    <section className="flex flex-col gap-10 py-8">
+    <section id="waitlist-form" className="flex flex-col gap-10 py-8">
       <div className="flex flex-col gap-4 text-center px-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">
           Start Your <span className="text-primary">Networking Journey Now</span>
@@ -82,7 +82,7 @@ export default function WaitlistForm() {
         <div className="bg-card-dark/30 border border-border-dark/50 rounded-2xl p-6 md:p-10 backdrop-blur-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="md:col-span-2">
-              <label htmlFor="name" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="name" className="block text-sm font-semibold text-primary mb-2">
                 Full Name *
               </label>
               <input
@@ -98,7 +98,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="email" className="block text-sm font-semibold text-primary mb-2">
                 Email Address *
               </label>
               <input
@@ -114,7 +114,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="phone" className="block text-sm font-semibold text-primary mb-2">
                 Phone Number *
               </label>
               <input
@@ -130,7 +130,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="jobProfession" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="jobProfession" className="block text-sm font-semibold text-primary mb-2">
                 Job Profession *
               </label>
               <input
@@ -146,7 +146,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="company" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="company" className="block text-sm font-semibold text-primary mb-2">
                 Company *
               </label>
               <input
@@ -162,8 +162,8 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="portfolio" className="block text-sm font-semibold text-white/90 mb-2">
-                Portfolio *
+              <label htmlFor="portfolio" className="block text-sm font-semibold text-primary mb-2">
+                Portfolio
               </label>
               <input
                 type="url"
@@ -171,15 +171,14 @@ export default function WaitlistForm() {
                 name="portfolio"
                 value={formData.portfolio}
                 onChange={handleChange}
-                required
                 className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                 placeholder="https://priyasharma.com"
               />
             </div>
 
             <div>
-              <label htmlFor="linkedin" className="block text-sm font-semibold text-white/90 mb-2">
-                LinkedIn Profile *
+              <label htmlFor="linkedin" className="block text-sm font-semibold text-primary mb-2">
+                LinkedIn Profile
               </label>
               <input
                 type="url"
@@ -187,14 +186,13 @@ export default function WaitlistForm() {
                 name="linkedin"
                 value={formData.linkedin}
                 onChange={handleChange}
-                required
                 className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                 placeholder="https://linkedin.com/in/priyasharma"
               />
             </div>
 
             <div>
-              <label htmlFor="instagram" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="instagram" className="block text-sm font-semibold text-primary mb-2">
                 Instagram Handle *
               </label>
               <input
@@ -210,7 +208,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="country" className="block text-sm font-semibold text-white/90 mb-2">
+              <label htmlFor="country" className="block text-sm font-semibold text-primary mb-2">
                 Country *
               </label>
               <input

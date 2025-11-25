@@ -12,6 +12,12 @@ const poppins = Poppins({
   display: "swap",
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: "HerNetworkingHub - Exclusive Women's Community | Network • Grow • Succeed",
   description: "Join HerNetworkingHub, an exclusive community for ambitious women entrepreneurs, founders, investors, and business leaders. Connect, collaborate, and create real impact with powerhouse women worldwide.",
