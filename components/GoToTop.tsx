@@ -40,10 +40,9 @@ export default function GoToTop() {
         width="18"
         height="18"
         viewBox="0 0 24 24"
-        className="sm:w-5 sm:h-5"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="text-white"
+        className="text-white sm:w-5 sm:h-5"
       >
         <path
           d="M12 4L4 12L5.41 13.41L11 7.83V20H13V7.83L18.59 13.41L20 12L12 4Z"
