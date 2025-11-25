@@ -6,8 +6,8 @@ export default function Hero() {
           HerNetworkingHub
         </h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
-          Network • Grow • Succeed
+        <p className="text-base sm:text-lg md:text-xl text-white/90 font-medium animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
+          Ambitious Women Deserve Powerful Networks!
         </p>
         
         {/* Decorative fading line after heading */}
@@ -29,8 +29,8 @@ export default function Hero() {
           </div>
         </div>
         
-        <p className="text-lg sm:text-xl md:text-2xl font-bold text-white mt-2 animate-fade-in-up px-4" style={{ animationDelay: '0.6s' }}>
-          Ambitious Women Deserve Powerful Networks!
+        <p className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-500 mt-2 animate-fade-in-up px-4" style={{ animationDelay: '0.6s' }}>
+          Network • Grow • Succeed
         </p>
       </div>
     </section>

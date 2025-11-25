@@ -63,7 +63,7 @@ export default function Features() {
               <div className={`flex items-center justify-center size-10 sm:size-12 rounded-full ${feature.colorClass} transition-transform duration-300 hover:rotate-12 flex-shrink-0`}>
                 <span className="material-symbols-outlined text-2xl sm:text-3xl">{feature.icon}</span>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-primary">{feature.title}</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-yellow-500">{feature.title}</h3>
             </div>
             <p className="text-sm sm:text-base text-white/70 font-normal">{feature.description}</p>
           </div>
