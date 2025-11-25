@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     siteName: 'HerNetworkingHub',
     images: [
       {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
+        url: '/logo.png',
+        width: 512,
+        height: 512,
         alt: 'HerNetworkingHub - Exclusive Women\'s Community',
       },
     ],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "HerNetworkingHub - Exclusive Women's Community",
     description: "Connect with powerhouse women entrepreneurs, founders, and business leaders. Join our exclusive community.",
-    images: ['/og-image.png'],
+    images: ['/logo.png'],
     creator: '@hernetworkinghub',
   },
   robots: {
@@ -70,6 +70,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
           rel="stylesheet"
