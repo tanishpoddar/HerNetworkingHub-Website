@@ -20,13 +20,13 @@ export default {
       colors: {
         primary: "#FF007F",
         "background-light": "#F5F5F5",
-        "background-dark": "#1A1A2E",
+        "background-dark": "#0A0A0A",
         "soft-pink": "#F9A8D4",
         "electric-purple": "#9D4EDD",
         "vibrant-teal": "#00DFD8",
         "foreground-dark": "#F5F5F5",
-        "card-dark": "#252541",
-        "border-dark": "#3a3a5e",
+        "card-dark": "#1A1A1A",
+        "border-dark": "#2A2A2A",
       },
       fontFamily: {
         display: ["var(--font-poppins)", "sans-serif"],

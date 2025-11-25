@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="grid grid-cols-1 gap-8 items-center py-8">
       <div className="flex flex-col gap-6 text-center items-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight animate-fade-in-up px-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight animate-fade-in-up px-4">
           Ambitious Women<br />
           Deserve <span className="text-primary">Powerful Networks</span>
         </h1>
@@ -17,7 +17,7 @@ export default function Hero() {
           
           <div className="flex flex-col gap-5 bg-card-dark/30 border border-border-dark/50 rounded-2xl p-6 md:p-10 backdrop-blur-sm relative hover:border-primary/30 transition-all duration-300">
             <p className="text-base md:text-lg text-white/90 leading-relaxed">
-              HerNetworkingHub is an <span className="text-primary font-semibold">Exclusive Women's Community</span> for Entrepreneurs, Founders, Investors, Coaches, Finance Professionals, Business Owners, Creators, Industry Leaders & Media who are ready to <span className="text-primary font-semibold">Connect, Collaborate & Create Real Impact</span>.
+              HerNetworkingHub is a <span className="text-primary font-semibold">Global Exclusive Community</span> for Entrepreneurs, Founders, Investors, Coaches, Finance Professionals, Business Owners, Creators, Industry Leaders & Media who are ready to <span className="text-primary font-semibold">Connect, Collaborate & Create Real Impact</span>.
             </p>
             
             <p className="text-base md:text-lg text-white/90 leading-relaxed">

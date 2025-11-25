@@ -1,3 +1,5 @@
+'use client';
+
 export default function TargetAudience() {
   const criteria = [
     "A high-achieving woman—founder, executive, creative, or expert—ready to make a significant impact in your field.",
@@ -24,13 +26,18 @@ export default function TargetAudience() {
           ))}
         </div>
       </div>
-      <div
-        className="w-full h-64 sm:h-80 lg:h-full min-h-[300px] bg-center bg-no-repeat bg-cover rounded-xl animate-fade-in-right hover:scale-105 transition-transform duration-500"
-        style={{
-          backgroundImage:
-            'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYQIIcGVMvhLE9I3Sk-iO9bE_ndv08rFNGl741ueBKYeuOjp0mkEm_BcSSWJHDJDE0IkYHlgiVcVbzLhaRi6v83A7YebIA-XqAHCZbzBgWbXUCgreMjXOPyLhtkvwq9d-zyRArYQ62INPyknSJ_mZ-CoibL3_0d1DHgyY_TbQ_LowR9uOc9OX6YS-0P07SYKrfNsohwt7cbr92N8YFZiTqBko6Cv5QoGNFpDjD1VpzbRAzSE_WsYmbJsxa5ARAy22687RfbhCZWg")',
-        }}
-      ></div>
+      <div className="w-full h-64 sm:h-80 lg:h-full min-h-[300px] rounded-xl animate-fade-in-right hover:scale-105 transition-transform duration-500 overflow-hidden">
+        <img 
+          src="/websiteimage.png" 
+          alt="Powerhouse Women Community" 
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback if image doesn't exist
+            e.currentTarget.style.display = 'none';
+            e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #FF007F 0%, #9D4EDD 100%)';
+          }}
+        />
+      </div>
     </section>
   );
 }

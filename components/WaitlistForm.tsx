@@ -69,10 +69,10 @@ export default function WaitlistForm() {
     <section className="flex flex-col gap-10 py-8">
       <div className="flex flex-col gap-4 text-center px-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">
-          Ready to <span className="text-primary">Join the Movement?</span>
+          Start Your <span className="text-primary">Networking Journey Now</span>
         </h2>
         <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto px-4">
-          Be Among The Many Powerhouse Women To Join Our Exclusive Community
+          Be Among The Many Powerhouse Women To Join Our Global Exclusive Community
         </p>
         {/* Decorative fading line */}
         <div className="w-full max-w-md mx-auto h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
