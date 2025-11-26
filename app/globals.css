@@ -16,6 +16,25 @@ body {
   min-height: 100vh;
 }
 
+/* Font Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+p, span, div {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 400;
+}
+
+button {
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
@@ -26,9 +45,10 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-fill-color: #ffffff !important;
   transition: background-color 5000s ease-in-out 0s;
-  box-shadow: inset 0 0 20px 20px rgba(26, 26, 46, 0.5);
+  box-shadow: inset 0 0 20px 20px rgba(10, 10, 10, 0.9) !important;
+  background-color: rgba(10, 10, 10, 0.9) !important;
 }
 
 /* Custom Cursor - Only on desktop */

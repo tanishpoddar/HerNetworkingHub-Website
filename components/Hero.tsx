@@ -20,7 +20,7 @@ export default function Hero() {
           
           <div className="flex flex-col gap-5 bg-card-dark/30 border border-border-dark/50 rounded-2xl p-6 md:p-10 backdrop-blur-sm relative hover:border-primary/30 transition-all duration-300">
             <p className="text-base md:text-lg text-white/90 leading-relaxed">
-              HerNetworkingHub is a <span className="text-primary font-semibold">Global Exclusive Community</span> for Entrepreneurs, Founders, Investors, Coaches, Finance Professionals, Business Owners, Creators, Industry Leaders & Media who are ready to <span className="text-primary font-semibold">Connect, Collaborate & Create Real Impact</span>.
+              HerNetworkingHub is a <span className="text-primary font-semibold">Global Exclusive Community for Women Entrepreneurs</span>, Founders, Investors, Coaches, Finance Professionals, Business Owners, Creators, Industry Leaders & Media who are ready to <span className="text-primary font-semibold">Connect, Collaborate & Create Real Impact</span>.
             </p>
             
             <p className="text-base md:text-lg text-white/90 leading-relaxed">

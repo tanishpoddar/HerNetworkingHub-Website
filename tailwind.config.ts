@@ -30,6 +30,9 @@ export default {
       },
       fontFamily: {
         display: ["var(--font-poppins)", "sans-serif"],
+        heading: ["var(--font-montserrat)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+        button: ["var(--font-roboto)", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "0.5rem",

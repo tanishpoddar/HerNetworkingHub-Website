@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import GlareHover from './GlareHover';
 
 export default function WaitlistForm() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,8 @@ export default function WaitlistForm() {
     portfolio: '',
     linkedin: '',
     instagram: '',
+    city: '',
+    state: '',
     country: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,6 +58,8 @@ export default function WaitlistForm() {
         portfolio: '',
         linkedin: '',
         instagram: '',
+        city: '',
+        state: '',
         country: ''
       });
     } catch (error) {
@@ -82,7 +87,7 @@ export default function WaitlistForm() {
         <div className="bg-card-dark/30 border border-border-dark/50 rounded-2xl p-6 md:p-10 backdrop-blur-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="md:col-span-2">
-              <label htmlFor="name" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="name" className="block text-sm font-bold text-primary mb-2">
                 Full Name *
               </label>
               <input
@@ -98,7 +103,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="email" className="block text-sm font-bold text-primary mb-2">
                 Email Address *
               </label>
               <input
@@ -114,7 +119,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="phone" className="block text-sm font-bold text-primary mb-2">
                 Phone Number *
               </label>
               <input
@@ -130,7 +135,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="jobProfession" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="jobProfession" className="block text-sm font-bold text-primary mb-2">
                 Job Profession *
               </label>
               <input
@@ -146,7 +151,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="company" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="company" className="block text-sm font-bold text-primary mb-2">
                 Company *
               </label>
               <input
@@ -162,7 +167,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="portfolio" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="portfolio" className="block text-sm font-bold text-primary mb-2">
                 Portfolio
               </label>
               <input
@@ -177,7 +182,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="linkedin" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="linkedin" className="block text-sm font-bold text-primary mb-2">
                 LinkedIn Profile
               </label>
               <input
@@ -192,7 +197,7 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="instagram" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="instagram" className="block text-sm font-bold text-primary mb-2">
                 Instagram Handle *
               </label>
               <input
@@ -208,7 +213,39 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label htmlFor="country" className="block text-sm font-semibold text-primary mb-2">
+              <label htmlFor="city" className="block text-sm font-bold text-primary mb-2">
+                City *
+              </label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                placeholder="Mumbai"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="state" className="block text-sm font-bold text-primary mb-2">
+                State *
+              </label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                value={formData.state}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                placeholder="Maharashtra"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="country" className="block text-sm font-bold text-primary mb-2">
                 Country *
               </label>
               <input
@@ -236,14 +273,28 @@ export default function WaitlistForm() {
             </div>
           )}
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="relative w-full mt-8 bg-gradient-to-r from-primary/30 via-primary/40 to-primary/30 hover:from-primary/40 hover:via-primary/50 hover:to-primary/40 backdrop-blur-xl border border-primary/60 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_8px_32px_0_rgba(255,0,127,0.37)] hover:shadow-[0_8px_32px_0_rgba(255,0,127,0.5)] overflow-hidden"
+          <GlareHover
+            width="100%"
+            height="auto"
+            background="transparent"
+            borderRadius="0.5rem"
+            borderColor="transparent"
+            glareColor="#FF007F"
+            glareOpacity={0.4}
+            glareAngle={-30}
+            glareSize={200}
+            transitionDuration={600}
+            className="border-0 mt-8"
           >
-            <span className="relative z-10">{isSubmitting ? 'Submitting...' : 'Join the Waitlist'}</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-          </button>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="relative w-full bg-gradient-to-r from-primary/30 via-primary/40 to-primary/30 hover:from-primary/40 hover:via-primary/50 hover:to-primary/40 backdrop-blur-xl border border-primary/60 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
+            >
+              <span className="relative z-10 font-black">{isSubmitting ? 'Submitting...' : 'Join the Waitlist'}</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </button>
+          </GlareHover>
         </div>
       </form>
     </section>

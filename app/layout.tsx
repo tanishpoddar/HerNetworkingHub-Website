@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Montserrat, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import GoToTop from "@/components/GoToTop";
@@ -9,6 +9,27 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "900"],
   subsets: ["latin"],
   variable: "--font-poppins",
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  weight: ["700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const inter = Inter({
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  weight: ["700", "900"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -86,7 +107,7 @@ export default function RootLayout({
         />
         <StructuredData />
       </head>
-      <body className={`${poppins.variable} bg-background-light dark:bg-background-dark font-display text-foreground-dark antialiased`} suppressHydrationWarning>
+      <body className={`${poppins.variable} ${montserrat.variable} ${inter.variable} ${roboto.variable} bg-background-light dark:bg-background-dark font-body text-foreground-dark antialiased`} suppressHydrationWarning>
         <CustomCursor />
         <GoToTop />
         {children}

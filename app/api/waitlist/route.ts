@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     
     // Validate required fields (portfolio and linkedin are optional)
-    const requiredFields = ['name', 'email', 'phone', 'jobProfession', 'company', 'instagram', 'country'];
+    const requiredFields = ['name', 'email', 'phone', 'jobProfession', 'company', 'instagram', 'city', 'state', 'country'];
     for (const field of requiredFields) {
       if (!body[field]) {
         return NextResponse.json(
