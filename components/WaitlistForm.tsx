@@ -97,7 +97,7 @@ export default function WaitlistForm() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="Priya Sharma"
               />
             </div>
@@ -113,7 +113,7 @@ export default function WaitlistForm() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="priya.sharma@example.com"
               />
             </div>
@@ -129,7 +129,7 @@ export default function WaitlistForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="+91 98765 43210"
               />
             </div>
@@ -145,7 +145,7 @@ export default function WaitlistForm() {
                 value={formData.jobProfession}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="Entrepreneur, Founder, Coach..."
               />
             </div>
@@ -161,7 +161,7 @@ export default function WaitlistForm() {
                 value={formData.company}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="Sharma Enterprises"
               />
             </div>
@@ -176,7 +176,7 @@ export default function WaitlistForm() {
                 name="portfolio"
                 value={formData.portfolio}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="https://priyasharma.com"
               />
             </div>
@@ -191,7 +191,7 @@ export default function WaitlistForm() {
                 name="linkedin"
                 value={formData.linkedin}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="https://linkedin.com/in/priyasharma"
               />
             </div>
@@ -207,7 +207,7 @@ export default function WaitlistForm() {
                 value={formData.instagram}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="@priyasharma"
               />
             </div>
@@ -223,7 +223,7 @@ export default function WaitlistForm() {
                 value={formData.city}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="Mumbai"
               />
             </div>
@@ -239,7 +239,7 @@ export default function WaitlistForm() {
                 value={formData.state}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="Maharashtra"
               />
             </div>
@@ -255,7 +255,7 @@ export default function WaitlistForm() {
                 value={formData.country}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                className="w-full px-4 py-3 bg-background-dark/50 border border-border-dark rounded-lg text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition [-webkit-autofill]:!bg-background-dark/50 [-webkit-autofill]:shadow-[0_0_0_1000px_rgba(0,0,0,0.5)_inset] [-webkit-autofill]:[-webkit-text-fill-color:white]"
                 placeholder="India"
               />
             </div>
