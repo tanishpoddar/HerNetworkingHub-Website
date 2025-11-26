@@ -4,6 +4,8 @@ import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import GoToTop from "@/components/GoToTop";
 import StructuredData from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "900"],
@@ -111,6 +113,8 @@ export default function RootLayout({
         <CustomCursor />
         <GoToTop />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
