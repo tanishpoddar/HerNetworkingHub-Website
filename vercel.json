@@ -34,7 +34,7 @@
       ]
     },
     {
-      "source": "/api/(.*)",
+      "source": "/api/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "source": "/(.*).(?:jpg|jpeg|png|gif|ico|svg|webp|avif)",
+      "source": "/:path*\\.(jpg|jpeg|png|gif|ico|svg|webp|avif)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "source": "/(.*).(?:js|css)",
+      "source": "/:path*\\.(js|css)",
       "headers": [
         {
           "key": "Cache-Control",
