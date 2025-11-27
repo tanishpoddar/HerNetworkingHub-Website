@@ -1,0 +1,15 @@
+# HerNetworkingHub - Exclusive Women's Community
+
+/* TEAM */
+Organization: HerNetworkingHub
+Site: https://www.hernetworkinghub.online
+Location: India
+
+/* SITE */
+Last update: 2024/11/28
+Standards: HTML5, CSS3, JavaScript, TypeScript, React, Next.js
+Components: Tailwind CSS, Framer Motion
+Software: Next.js 15, React 19
+
+/* THANKS */
+To all the powerhouse women entrepreneurs, founders, investors, and business leaders who inspire us every day.

@@ -1,6 +1,16 @@
+# HerNetworkingHub - Official Website
+# https://www.hernetworkinghub.online
+
 # Allow all crawlers
 User-agent: *
 Allow: /
+Crawl-delay: 0
+
+# Disallow admin and API routes
+Disallow: /api/
 
 # Sitemap location
-Sitemap: https://hernetworkinghub.com/sitemap.xml
+Sitemap: https://www.hernetworkinghub.online/sitemap.xml
+
+# Host preference
+Host: https://www.hernetworkinghub.online

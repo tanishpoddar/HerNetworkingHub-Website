@@ -1,0 +1,19 @@
+Contact: mailto:security@hernetworkinghub.online
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://www.hernetworkinghub.online/.well-known/security.txt
+
+# HerNetworkingHub Security Policy
+
+# If you discover a security vulnerability, please report it to us at:
+# security@hernetworkinghub.online
+
+# We take security seriously and will respond to all reports within 48 hours.
+
+# Please include:
+# - Description of the vulnerability
+# - Steps to reproduce
+# - Potential impact
+# - Any suggested fixes
+
+# Thank you for helping keep HerNetworkingHub secure!
