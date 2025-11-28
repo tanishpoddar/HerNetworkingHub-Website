@@ -146,10 +146,9 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
+    google: 'bM56vryZjRM_gGHKucDT2ALoC2xTrcakKjzoNsvhyYk',
     other: {
-      'msvalidate.01': 'your-bing-verification-code',
+      'msvalidate.01': '67C75B84226E7093635D713DE3E123A6',
     },
   },
   category: 'business',
